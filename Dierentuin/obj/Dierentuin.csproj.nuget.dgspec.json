@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bart Roos\\Desktop\\H6_Weekcheck_Dierentuin\\Dierentuin\\Dierentuin.csproj": {}
+    "C:\\Users\\Karim Alkichouhi\\Documents\\School\\Leerjaar 1\\School_Jaar_2022\\Blok B\\WIN\\CSD-I\\WeekChecks\\H7_DierenTuin\\Dierentuin\\Dierentuin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bart Roos\\Desktop\\H6_Weekcheck_Dierentuin\\Dierentuin\\Dierentuin.csproj": {
+    "C:\\Users\\Karim Alkichouhi\\Documents\\School\\Leerjaar 1\\School_Jaar_2022\\Blok B\\WIN\\CSD-I\\WeekChecks\\H7_DierenTuin\\Dierentuin\\Dierentuin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bart Roos\\Desktop\\H6_Weekcheck_Dierentuin\\Dierentuin\\Dierentuin.csproj",
+        "projectUniqueName": "C:\\Users\\Karim Alkichouhi\\Documents\\School\\Leerjaar 1\\School_Jaar_2022\\Blok B\\WIN\\CSD-I\\WeekChecks\\H7_DierenTuin\\Dierentuin\\Dierentuin.csproj",
         "projectName": "Dierentuin",
-        "projectPath": "C:\\Users\\Bart Roos\\Desktop\\H6_Weekcheck_Dierentuin\\Dierentuin\\Dierentuin.csproj",
-        "packagesPath": "C:\\Users\\Bart Roos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bart Roos\\Desktop\\H6_Weekcheck_Dierentuin\\Dierentuin\\obj\\",
+        "projectPath": "C:\\Users\\Karim Alkichouhi\\Documents\\School\\Leerjaar 1\\School_Jaar_2022\\Blok B\\WIN\\CSD-I\\WeekChecks\\H7_DierenTuin\\Dierentuin\\Dierentuin.csproj",
+        "packagesPath": "C:\\Users\\Karim Alkichouhi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Karim Alkichouhi\\Documents\\School\\Leerjaar 1\\School_Jaar_2022\\Blok B\\WIN\\CSD-I\\WeekChecks\\H7_DierenTuin\\Dierentuin\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bart Roos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Karim Alkichouhi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
