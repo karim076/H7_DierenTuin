@@ -42,12 +42,21 @@ namespace Dierentuin
                 tbFileStatus.Text = file.Path;
             }
 
-            using (var reader = new StreamReader(file.Path))
-            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+            using (var fileAcces = await file.OpenReadAsync())
             {
-                var records = csv.GetRecords<Animal>();
-                lvAnimals.ItemsSource = records;
+                using (var stream = fileAcces.AsStreamForRead())
+                {
+                    using (var reader = new StreamReader(stream))
+                    {
+                        using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+                        {
+                            var records = csv.GetRecords<Animal>();
+                            lvAnimals.ItemsSource = records;
+                        }
+                    }
+                }
             }
         }
     }
 }
+
