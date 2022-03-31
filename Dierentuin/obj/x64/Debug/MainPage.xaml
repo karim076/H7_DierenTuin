@@ -15,28 +15,38 @@
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal" Padding="30" Background="{ThemeResource SystemAccentColor}">
-            <Button x:ConnectionId='11' Content="Kies CSV bestand"                     />
-            <TextBlock x:ConnectionId='12' x:Name="tbFileStatus" Margin="20" />
+            <Button x:ConnectionId='10' Content="Kies CSV bestand"                     />
+            <TextBlock x:ConnectionId='11' x:Name="tbFileStatus" Margin="20" />
         </StackPanel>
         <ListView x:ConnectionId='2' x:Name="lvAnimals" Grid.Row="1">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment"  Value="Stretch"></Setter>
+                </Style>
+            </ListView.ItemContainerStyle>
             <ListView.ItemTemplate>
                 <DataTemplate                          >
-
-                    <Border x:ConnectionId='4' BorderThickness="1" BorderBrush="Black" Margin="-10,103,10,659" Width="1000" Height="300" Grid.Row="1">
-                        <StackPanel Orientation="Horizontal">
-                            <StackPanel Width="400">
-                                <TextBlock>
-                                <Run x:ConnectionId='6'                       ></Run><LineBreak/>
-                                <Run x:ConnectionId='7'                     ></Run><LineBreak/>
-                                <Run x:ConnectionId='8'                      ></Run><LineBreak/>
-                                <Run x:ConnectionId='9'                              ></Run><LineBreak/>
-                                <Run x:ConnectionId='10'                    ></Run><LineBreak/>
+                
+                    <Border x:ConnectionId='4' BorderThickness="1" BorderBrush="Black"  Grid.Row="1" Margin="20,20,20,20" Padding="20">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <StackPanel Spacing="10">
+                                <TextBlock Padding="20" Style="{ThemeResource BaseTextBlockStyle}">
+                                <Run x:ConnectionId='6' FontStretch="Normal" FontSize="50" FontWeight="ExtraBold"                     ></Run>
+                                <Run x:ConnectionId='7' FontSize="50"                      ></Run><LineBreak/>
+                                <Run x:ConnectionId='8' FontSize="30" FontStyle="Italic"                              ></Run><LineBreak/><LineBreak/>
+                                <Run x:ConnectionId='9' FontSize="30"                    ></Run>
                                 </TextBlock>
                             </StackPanel>
-                            <StackPanel Width="300">
-                                <Image x:ConnectionId='5'                             ></Image>
+                            
+                            <StackPanel Grid.Column="1">
+                                <Image x:ConnectionId='5' HorizontalAlignment="Stretch"                             ></Image>
                             </StackPanel>
-                        </StackPanel>
+                        </Grid>
                     </Border>
                     
                 </DataTemplate>
