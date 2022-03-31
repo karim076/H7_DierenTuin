@@ -21,7 +21,6 @@
         <ListView x:ConnectionId='2' x:Name="lvAnimals" Grid.Row="1">
             <ListView.ItemTemplate>
                 <DataTemplate                          >
-                    <!-- x:DataType="" .itemsource -->
 
                     <Border x:ConnectionId='4' BorderThickness="1" BorderBrush="Black" Margin="-10,103,10,659" Width="1000" Height="300" Grid.Row="1">
                         <StackPanel Orientation="Horizontal">
