@@ -1,2 +1,3 @@
 # H7_DierenTuin
- Toon verschillende foto's van dieren
+ WindowApplicatie voor csv bestanden te openen.
+ Toon verschillende foto's van dieren.
