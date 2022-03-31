@@ -24,11 +24,18 @@
 
                     <Border BorderThickness="1" BorderBrush="Black" Margin="-10,103,10,659" Width="1000" Height="300" Grid.Row="1">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock>
-                                <Run ></Run><LineBreak/>
-                                <Run></Run><LineBreak/>
-                                <Run></Run><LineBreak/>
-                            </TextBlock>
+                            <StackPanel Width="400">
+                                <TextBlock>
+                                <Run Text="{x:Bind Nummer}"></Run><LineBreak/>
+                                <Run Text="{x:Bind Naam}"></Run><LineBreak/>
+                                <Run Text="{x:Bind Soort}"></Run><LineBreak/>
+                                <Run Text="{x:Bind Latijnse_Naam}"></Run><LineBreak/>
+                                <Run Text="{x:Bind Hok}"></Run><LineBreak/>
+                                </TextBlock>
+                            </StackPanel>
+                            <StackPanel Width="300">
+                                <Image Source="{x:Bind Afbeelding}"></Image>
+                            </StackPanel>
                         </StackPanel>
                     </Border>
                     
