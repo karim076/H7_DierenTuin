@@ -18,12 +18,19 @@
             <Button Content="Kies CSV bestand" />
             <TextBlock x:Name="tbFileStatus" Margin="20" />
         </StackPanel>
-
         <ListView x:Name="lvAnimals" Grid.Row="1">
             <ListView.ItemTemplate>
                 <DataTemplate>
 
-                    <!-- Bouw hier de lay-out voor één dier -->
+                    <Border BorderThickness="1" BorderBrush="Black" Margin="-10,103,10,659" Width="1000" Height="300" Grid.Row="1">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock>
+                                <Run ></Run><LineBreak/>
+                                <Run></Run><LineBreak/>
+                                <Run></Run><LineBreak/>
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
                     
                 </DataTemplate>
             </ListView.ItemTemplate>
