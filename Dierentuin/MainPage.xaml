@@ -20,7 +20,8 @@
         </StackPanel>
         <ListView x:Name="lvAnimals" Grid.Row="1">
             <ListView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="local:Animal">
+                    <!-- x:DataType="" .itemsource -->
 
                     <Border BorderThickness="1" BorderBrush="Black" Margin="-10,103,10,659" Width="1000" Height="300" Grid.Row="1">
                         <StackPanel Orientation="Horizontal">
