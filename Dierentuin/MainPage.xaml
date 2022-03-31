@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal" Padding="30" Background="{ThemeResource SystemAccentColor}">
-            <Button Content="Kies CSV bestand" />
+            <Button Content="Kies CSV bestand" Click="Button_Click"/>
             <TextBlock x:Name="tbFileStatus" Margin="20" />
         </StackPanel>
         <ListView x:Name="lvAnimals" Grid.Row="1">
