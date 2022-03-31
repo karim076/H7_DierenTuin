@@ -21,23 +21,26 @@
         <ListView x:Name="lvAnimals" Grid.Row="1">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:Animal">
-                    <!-- x:DataType="" .itemsource -->
 
-                    <Border BorderThickness="1" BorderBrush="Black" Margin="-10,103,10,659" Width="1000" Height="300" Grid.Row="1">
-                        <StackPanel Orientation="Horizontal">
-                            <StackPanel Width="400">
-                                <TextBlock>
-                                <Run Text="{x:Bind Nummer}"></Run><LineBreak/>
-                                <Run Text="{x:Bind Naam}"></Run><LineBreak/>
-                                <Run Text="{x:Bind Soort}"></Run><LineBreak/>
-                                <Run Text="{x:Bind Latijnse_Naam}"></Run><LineBreak/>
-                                <Run Text="{x:Bind Hok}"></Run><LineBreak/>
+                    <Border BorderThickness="1" BorderBrush="Black"  Grid.Row="1" Margin="20,20,20,20" HorizontalAlignment="Stretch">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <StackPanel Spacing="10">
+                                <TextBlock Padding="20">
+                                <Run FontSize="40" FontWeight="ExtraBold" Text="{x:Bind Naam}"></Run>
+                                <Run FontSize="40" Text="{x:Bind Soort}"></Run><LineBreak/>
+                                <Run FontStyle="Italic" Text="{x:Bind Latijnse_Naam}"></Run><LineBreak/><LineBreak/>
+                                <Run Text="{x:Bind Hok}"></Run>
                                 </TextBlock>
                             </StackPanel>
-                            <StackPanel Width="300">
-                                <Image Source="{x:Bind Afbeelding}"></Image>
+                            <StackPanel Grid.Column="1">
+                                <Image MaxWidth="400" Height="250" Source="{x:Bind Afbeelding}"></Image>
                             </StackPanel>
-                        </StackPanel>
+                        </Grid>
                     </Border>
                     
                 </DataTemplate>
