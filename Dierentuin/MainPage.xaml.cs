@@ -7,6 +7,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage.Pickers;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -24,6 +25,29 @@ namespace Dierentuin
             this.InitializeComponent();
         }
 
-        
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var picker = new FileOpenPicker();
+            picker.SuggestedStartLocation = PickerLocationId.Downloads;
+            picker.FileTypeFilter.Add(".csv");
+
+            //TODO: voeg hier je eigen code toe, zoals uit H5, paragraaf 7
+            var file = await picker.PickSingleFileAsync();
+            if (file == null)
+            {
+                tbFileStatus.Text = "Geen geldig bestand gekozen";
+            }
+            else
+            {
+                tbFileStatus.Text = file.Path;
+            }
+
+            using (var reader = new StreamReader(file.Path))
+            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+            {
+                var records = csv.GetRecords<Animal>();
+                lvAnimals.ItemsSource = records;
+            }
+        }
     }
 }
