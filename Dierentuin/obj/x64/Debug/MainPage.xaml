@@ -38,8 +38,8 @@
                                 <TextBlock Padding="20" Style="{ThemeResource BaseTextBlockStyle}">
                                 <Run x:ConnectionId='6' FontStretch="Normal" FontSize="50" FontWeight="ExtraBold"                     ></Run>
                                 <Run x:ConnectionId='7' FontSize="50"                      ></Run><LineBreak/>
-                                <Run x:ConnectionId='8' FontSize="30" FontStyle="Italic"                              ></Run><LineBreak/><LineBreak/>
-                                <Run x:ConnectionId='9' FontSize="30"                    ></Run>
+                                <Run x:ConnectionId='8' FontSize="25" FontStyle="Italic"                              ></Run><LineBreak/><LineBreak/>
+                                <Run x:ConnectionId='9' FontSize="25"                    ></Run>
                                 </TextBlock>
                             </StackPanel>
                             
