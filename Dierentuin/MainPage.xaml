@@ -14,9 +14,10 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal" Padding="30" Background="{ThemeResource SystemAccentColor}">
+        <StackPanel Orientation="Vertical" Padding="30" Background="{ThemeResource SystemAccentColor}">
             <Button Content="Kies CSV bestand" Click="Button_Click"/>
             <TextBlock x:Name="tbFileStatus" Margin="20" />
+            <TextBlock x:Name="res" Margin="20"/>
         </StackPanel>
         <ListView x:Name="lvAnimals" Grid.Row="1">
             <ListView.ItemContainerStyle>
@@ -37,9 +38,9 @@
                             <StackPanel Spacing="10">
                                 <TextBlock Padding="20" Style="{ThemeResource BaseTextBlockStyle}">
                                 <Run FontStretch="Normal" FontSize="50" FontWeight="ExtraBold" Text="{x:Bind Naam}"></Run>
-                                <Run FontSize="50" Text="{x:Bind Soort}"></Run><LineBreak/>
-                                <Run FontSize="25" FontStyle="Italic" Text="{x:Bind Latijnse_Naam}"></Run><LineBreak/><LineBreak/>
-                                <Run FontSize="25" Text="{x:Bind Hok}"></Run>
+                                <Run  FontSize="50" Text="{x:Bind Soort}"></Run><LineBreak/>
+                                <Run  FontSize="25" FontStyle="Italic" Text="{x:Bind Latijnse_Naam}"></Run><LineBreak/><LineBreak/>
+                                <Run  FontSize="25" Text="{x:Bind Hok}"></Run>
                                 </TextBlock>
                             </StackPanel>
                             

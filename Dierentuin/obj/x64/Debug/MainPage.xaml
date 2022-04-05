@@ -14,9 +14,10 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal" Padding="30" Background="{ThemeResource SystemAccentColor}">
+        <StackPanel Orientation="Vertical" Padding="30" Background="{ThemeResource SystemAccentColor}">
             <Button x:ConnectionId='10' Content="Kies CSV bestand"                     />
             <TextBlock x:ConnectionId='11' x:Name="tbFileStatus" Margin="20" />
+            <TextBlock x:ConnectionId='12' x:Name="res" Margin="20"/>
         </StackPanel>
         <ListView x:ConnectionId='2' x:Name="lvAnimals" Grid.Row="1">
             <ListView.ItemContainerStyle>
@@ -36,10 +37,10 @@
                             
                             <StackPanel Spacing="10">
                                 <TextBlock Padding="20" Style="{ThemeResource BaseTextBlockStyle}">
-                                <Run x:ConnectionId='6' FontStretch="Normal" FontSize="50" FontWeight="ExtraBold"                     ></Run>
-                                <Run x:ConnectionId='7' FontSize="50"                      ></Run><LineBreak/>
-                                <Run x:ConnectionId='8' FontSize="25" FontStyle="Italic"                              ></Run><LineBreak/><LineBreak/>
-                                <Run x:ConnectionId='9' FontSize="25"                    ></Run>
+                                <Run x:ConnectionId='6' x:Name="resmin1" FontStretch="Normal" FontSize="50" FontWeight="ExtraBold"                     ></Run>
+                                <Run x:ConnectionId='7' x:Name="resmin2" FontSize="50"                      ></Run><LineBreak/>
+                                <Run x:ConnectionId='8' x:Name="resmin3" FontSize="25" FontStyle="Italic"                              ></Run><LineBreak/><LineBreak/>
+                                <Run x:ConnectionId='9' x:Name="resmin4" FontSize="25"                    ></Run>
                                 </TextBlock>
                             </StackPanel>
                             
