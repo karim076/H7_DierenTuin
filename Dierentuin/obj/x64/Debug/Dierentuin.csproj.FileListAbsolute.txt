@@ -47,3 +47,4 @@ C:\Users\Karim Alkichouhi\Documents\School\Leerjaar 1\School_Jaar_2022\Blok B\WI
 C:\Users\Karim Alkichouhi\Documents\School\Leerjaar 1\School_Jaar_2022\Blok B\WIN\CSD-I\WeekChecks\H7_DierenTuin\Dierentuin\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Karim Alkichouhi\Documents\School\Leerjaar 1\School_Jaar_2022\Blok B\WIN\CSD-I\WeekChecks\H7_DierenTuin\Dierentuin\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\Karim Alkichouhi\Documents\School\Leerjaar 1\School_Jaar_2022\Blok B\WIN\CSD-I\WeekChecks\H7_DierenTuin\Dierentuin\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424779200000000.json
+C:\Users\Karim Alkichouhi\Documents\School\Leerjaar 1\School_Jaar_2022\Blok B\WIN\CSD-I\WeekChecks\H7_DierenTuin\Dierentuin\obj\x64\Debug\Dierentuin.csproj.AssemblyReference.cache
